@@ -2,7 +2,7 @@
 
 ## Scope and status
 
-Local standalone source-release candidate only. No remote is configured; nothing was pushed, published or submitted. Local Git identity was set before the first commit to `Cloud Lab Works` and `3764699+issaquahd@users.noreply.github.com`.
+Published 2026-10-26 as https://github.com/cloudlabworks/aims-team-drift. Git identity: `Cloud Lab Works` <`325058966+cloudlabworks@users.noreply.github.com`> (the first commit's personal-account noreply was rewritten before the repository was made public).
 
 Selected submission: **981740 (v2)**; v3 **983242** is included as the documented hosted regression. Intended, not-yet-published URL: https://github.com/cloudlabworks/aims-team-drift .
 
