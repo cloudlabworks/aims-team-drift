@@ -1,0 +1,45 @@
+{
+  "context": "Temporary isolated checkout of release code plus original local fitted artifacts, which are NOT included in release; no retraining or hosted rescoring.",
+  "source_identity": {
+    "submission/model.py": true,
+    "submission/featurize.py": true,
+    "submission3/embed.py": true,
+    "submission3/model.py": true,
+    "submission3/featurize.py": true,
+    "submission3/labeling.py": true,
+    "build_zip.py": true
+  },
+  "python_source_compilation": "passed",
+  "checks": [
+    {
+      "command": "python -I -B -m unittest discover -s tests -p test_model.py -v",
+      "exit_code": 0,
+      "output": "test_always_valid_probability (test_model.T.test_always_valid_probability) ... ok\ntest_bad_labels_ignored (test_model.T.test_bad_labels_ignored) ... ok\ntest_budget0_is_prior_probability (test_model.T.test_budget0_is_prior_probability) ... ok\ntest_cross_subject_pooling_and_item_effect (test_model.T.test_cross_subject_pooling_and_item_effect) ... ok\ntest_inputs_not_mutated_and_budget_order_independent (test_model.T.test_inputs_not_mutated_and_budget_order_independent) ... ok\ntest_labels_move_prediction_in_the_right_direction (test_model.T.test_labels_move_prediction_in_the_right_direction) ... ok\ntest_other_benchmarks_do_not_leak (test_model.T.test_other_benchmarks_do_not_leak) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.012s\n\nOK\n"
+    },
+    {
+      "command": "python -I -B -m unittest discover -s tests -p test_v3.py -v",
+      "exit_code": 0,
+      "output": "test_budget_exactly_reached_and_never_exceeded (test_v3.TestAcquisition.test_budget_exactly_reached_and_never_exceeded) ... ok\ntest_decisions_equal_kit_rule (test_v3.TestAcquisition.test_decisions_equal_kit_rule) ... ok\ntest_deterministic (test_v3.TestAcquisition.test_deterministic) ... ok\ntest_edge_contexts (test_v3.TestAcquisition.test_edge_contexts) ... ok\ntest_kit_source_still_has_the_rule (test_v3.TestAcquisition.test_kit_source_still_has_the_rule) ... <temporary-checkout>/tests/test_v3.py:44: ResourceWarning: unclosed file <_io.TextIOWrapper name='<temporary-checkout>/paiec_baseline/tools/streaming_ingestion.py' mode='r' encoding='UTF-8'>\n  src = open(KIT).read()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nok\ntest_nested_budgets_are_prefixes (test_v3.TestAcquisition.test_nested_budgets_are_prefixes) ... ok\ntest_platform_resolves_stream_mode_without_prediction (test_v3.TestAcquisition.test_platform_resolves_stream_mode_without_prediction) ... ok\ntest_similarity_is_semantic (test_v3.TestEncoder.test_similarity_is_semantic) ... ok\ntest_tokenizer_special_tokens_and_accents (test_v3.TestEncoder.test_tokenizer_special_tokens_and_accents) ... ok\ntest_unit_norm_and_empty (test_v3.TestEncoder.test_unit_norm_and_empty) ... ok\ntest_aggregate (test_v3.TestLabels.test_aggregate) ... ok\ntest_binarize (test_v3.TestLabels.test_binarize) ... ok\ntest_construct_label_deterministic_and_unbiased (test_v3.TestLabels.test_construct_label_deterministic_and_unbiased) ... ok\ntest_bucket_of (test_v3.TestModel.test_bucket_of) ... ok\ntest_calibration_maps (test_v3.TestModel.test_calibration_maps) ... ok\ntest_contract_and_budget_zero (test_v3.TestModel.test_contract_and_budget_zero) ... ok\ntest_embedding_term_generalises_to_unseen_items (test_v3.TestModel.test_embedding_term_generalises_to_unseen_items) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.162s\n\nOK\n"
+    },
+    {
+      "command": "python -B build_zip.py",
+      "exit_code": 0,
+      "output": "Wrote <temporary-checkout>/dist/submission.zip (837,654 bytes): featurize.py, model.py, artifacts/idf.f32, artifacts/meta.json, artifacts/wi.f32, artifacts/ws.f32\n"
+    },
+    {
+      "command": "python -B build_zip.py submission3 dist/submission-v3.zip",
+      "exit_code": 0,
+      "output": "Wrote <temporary-checkout>/dist/submission-v3.zip (15,052,218 bytes): embed.py, featurize.py, labeling.py, model.py, artifacts/calib.json, artifacts/embed_table.f16, artifacts/embed_vocab.txt, artifacts/idf.f32, artifacts/meta.json, artifacts/pca_basis.f32, artifacts/pca_mean.f32, artifacts/wi.f32, artifacts/ws.f32\n"
+    },
+    {
+      "command": "python -I check_submission_zip.py ../dist/submission.zip",
+      "exit_code": 0,
+      "output": "OK: <temporary-checkout>/dist/submission.zip looks like a valid submission ZIP.\n"
+    },
+    {
+      "command": "python -I check_submission_zip.py ../dist/submission-v3.zip",
+      "exit_code": 0,
+      "output": "OK: <temporary-checkout>/dist/submission-v3.zip looks like a valid submission ZIP.\n"
+    }
+  ]
+}

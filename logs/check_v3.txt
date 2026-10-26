@@ -1,0 +1,6 @@
+$ ../.venv/bin/python -I check_submission_zip.py ../dist/submission-v3.zip
+OK: ../dist/submission-v3.zip looks like a valid submission ZIP.
+exit=0
+$ ... --static-only
+OK: ../dist/submission-v3.zip looks like a valid submission ZIP. Static checks only; prediction and acquisition were not run.
+exit=0

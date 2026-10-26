@@ -1,0 +1,8 @@
+{
+  "url": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip",
+  "archive_sha256": "82473931e3ef710fcd3f4a8cd4119b9de32e56825f90f9e5a6d55f2d01b817d9",
+  "archive_member": "neurips_2026.sty",
+  "style_sha256": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a",
+  "retrieved": "2026-10-26",
+  "status": "Official 2026 style obtained from the archive linked by the 2026 Call for Papers; obsolete /PaperInformation/StyleFiles and guessed Styles/neurips_2026.sty returned 404."
+}

@@ -1,0 +1,6 @@
+outer fold 0 family temp cross-fit ALC proxy {'none': 0.20627, 'temp': 0.20591, 'platt': 0.20645, 'iso': 0.20719}
+outer fold 1 family temp cross-fit ALC proxy {'none': 0.21258, 'temp': 0.21176, 'platt': 0.21213, 'iso': 0.21309}
+outer fold 2 family temp cross-fit ALC proxy {'none': 0.20452, 'temp': 0.20397, 'platt': 0.20426, 'iso': 0.20503}
+outer fold 3 family temp cross-fit ALC proxy {'none': 0.20414, 'temp': 0.20353, 'platt': 0.20359, 'iso': 0.20437}
+outer fold 4 family temp cross-fit ALC proxy {'none': 0.20725, 'temp': 0.20685, 'platt': 0.20743, 'iso': 0.20802}
+final family temp {'none': 0.20682444310090506, 'temp': 0.20626592281624218, 'platt': 0.20649820653618572, 'iso': 0.2070623496325099}

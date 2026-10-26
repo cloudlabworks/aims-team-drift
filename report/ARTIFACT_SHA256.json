@@ -1,0 +1,21 @@
+{
+  "submission/artifacts/idf.f32": "86afe65bdc70bb6058d210df14321c90d63258fb5795cbaa939f759a863a8900",
+  "submission/artifacts/meta.json": "d277bcf328f416013e7aab4e86307355dd491018ec1dec2ae8944290c734e44a",
+  "submission/artifacts/wi.f32": "9328f1043e58486e61b0b1a8b6488efe8d6954573abbfb7fead777f00db77205",
+  "submission/artifacts/ws.f32": "4fdeee3baa4abbeba08af8302fc2b40785b707a47fa448714e910c5b4202a9a0",
+  "submission/featurize.py": "18f3e5f00af47681c56448046a9301c5abb9e08dac8141a4f0857818b1275704",
+  "submission/model.py": "bdbb2b331852cd36a7631c7f4a27b6f2a2bf14f23d21ee0259dfec7893b8ed6c",
+  "submission3/artifacts/calib.json": "8443f29a460dff66b39f526471011efcb5f583f5428214b3c298a291b363bbe8",
+  "submission3/artifacts/embed_table.f16": "cd5b65b0005dd6c26c832abf041b15c925bd3dee49bf32eec57220306d070bb3",
+  "submission3/artifacts/embed_vocab.txt": "1394523a67ddd404a825428018c0582a6998bcfa044ecbcbf1f4d71adb94c61c",
+  "submission3/artifacts/idf.f32": "86afe65bdc70bb6058d210df14321c90d63258fb5795cbaa939f759a863a8900",
+  "submission3/artifacts/meta.json": "edb9756dbb598ca18a9abeae28ff0c23788fe78e856bedb288f2e48adbf87f97",
+  "submission3/artifacts/pca_basis.f32": "fc83d367f4b4ed4d10d57fd87ade8e1a6770cc2d172f87ab99591d46ef6806a2",
+  "submission3/artifacts/pca_mean.f32": "cba1cf7faa77f6c2e94c4e5298a1f0199582ce6292767d171f6b26c4510212f3",
+  "submission3/artifacts/wi.f32": "9328f1043e58486e61b0b1a8b6488efe8d6954573abbfb7fead777f00db77205",
+  "submission3/artifacts/ws.f32": "4fdeee3baa4abbeba08af8302fc2b40785b707a47fa448714e910c5b4202a9a0",
+  "submission3/embed.py": "597b24daef44fb51b25b6d2df7bd6f705647c76818da52b51f39c479026b9bd0",
+  "submission3/featurize.py": "18f3e5f00af47681c56448046a9301c5abb9e08dac8141a4f0857818b1275704",
+  "submission3/labeling.py": "8daa3402c306aa391e7df596fa5342bb0dc0505a330405fa668c11e13448feb5",
+  "submission3/model.py": "88ed3b3ffcffae5f23203b9e0584c2a46115d419a9c210cb5a5b0b3984688bf7"
+}

@@ -1,0 +1,24 @@
+{
+  "main_text_pages_including_acknowledgements": 6,
+  "total_pages": 10,
+  "references_pages": [
+    7
+  ],
+  "appendix_pages": [
+    8,
+    9,
+    10
+  ],
+  "instruments": [
+    "pdfinfo (Poppler)",
+    "pypdf page-text boundary inspection"
+  ],
+  "scientific_numeric_tokens_unchanged": true,
+  "original_source_comments_unchanged": true,
+  "warnings": "Underfull text boxes only; no missing glyphs or overfull boxes.",
+  "pdf_sha256": "a7938438110d811148dc323888c8c6e08e9a06c1637af0b0e0b06fac08343414",
+  "hosted_table_pages": [
+    5
+  ],
+  "visual_inspection": "Rendered title page and main results page inspected; hosted table subsequently kept together and its rows checked in PDF text."
+}

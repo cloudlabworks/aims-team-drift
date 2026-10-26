@@ -1,0 +1,9 @@
+budget=0 labeled=0 pairs=10 targets=500 bench=medhelm_ehr_sql
+import+artifact load 0.00s | first call (fit) 0.0 ms | median call 0.00 ms | p99 0.0 ms | max 0 ms | total 0.00s
+peak RSS 86 MB
+budget=7 labeled=70 pairs=10 targets=500 bench=medhelm_ehr_sql
+import+artifact load 0.00s | first call (fit) 0.9 ms | median call 0.03 ms | p99 0.0 ms | max 1 ms | total 0.02s
+peak RSS 85 MB
+budget=31 labeled=310 pairs=10 targets=500 bench=medhelm_ehr_sql
+import+artifact load 0.00s | first call (fit) 4.2 ms | median call 0.13 ms | p99 0.2 ms | max 4 ms | total 0.07s
+peak RSS 85 MB

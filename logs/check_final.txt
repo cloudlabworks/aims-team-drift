@@ -1,0 +1,6 @@
+OK: ../dist/submission.zip looks like a valid submission ZIP.
+OK: ../dist/submission.zip looks like a valid submission ZIP. Static checks only; prediction and acquisition were not run.
+----------------------------------------------------------------------
+Ran 19 tests in 0.845s
+
+OK

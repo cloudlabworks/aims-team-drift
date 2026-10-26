@@ -1,0 +1,12 @@
+budget=0 labeled=0 pairs=10 targets=500 bench=bird_sql
+import+artifact load 0.00s | first call (fit + encode) 0 ms | median call 0.00 ms | p99 0.2 ms | max 0 ms | total 0.01s
+peak RSS 333 MB
+max |p(stdlib encoder) - p(cached numpy embeddings)| over 300 targets: 0.00e+00
+budget=7 labeled=70 pairs=10 targets=500 bench=bird_sql
+import+artifact load 0.00s | first call (fit + encode) 138 ms | median call 0.04 ms | p99 2.4 ms | max 138 ms | total 0.26s
+peak RSS 361 MB
+max |p(stdlib encoder) - p(cached numpy embeddings)| over 300 targets: 4.76e-09
+budget=31 labeled=310 pairs=10 targets=500 bench=bird_sql
+import+artifact load 0.00s | first call (fit + encode) 290 ms | median call 0.15 ms | p99 0.2 ms | max 290 ms | total 0.37s
+peak RSS 361 MB
+max |p(stdlib encoder) - p(cached numpy embeddings)| over 300 targets: 8.31e-09
