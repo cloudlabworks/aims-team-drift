@@ -1,5 +1,7 @@
 # Team Drift — AIMS / NeurIPS 2026 PAIEC
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23720944.svg)](https://doi.org/10.5281/zenodo.23720944)
+
 Cloud Lab Works. Selected Codabench submission: **981740 (v2)**. The later **983242 (v3)** is included for reproducibility; its hosted primary score regressed.
 
 **Local release candidate only: not published or pushed.** Intended public URL: https://github.com/cloudlabworks/aims-team-drift . The report uses this explicitly unverified placeholder. Publication and OpenReview submission remain separate actions.
@@ -120,3 +122,23 @@ The build script converts the Markdown with Pandoc and wraps it in the unmodifie
 ## License
 
 Original project code: MIT, Copyright (c) 2026 Cloud Lab Works LLC. Third-party style and external dependencies retain their own terms; see `THIRD_PARTY.md`.
+
+## Citation
+
+If you use this project, please cite the accompanying preprint:
+[Predicting AI-System Responses Without Running Them: A Hierarchical Test-Time Update for the NeurIPS 2026 Predictive AI Evaluation Competition](https://doi.org/10.5281/zenodo.23720944). DOI: [10.5281/zenodo.23720944](https://doi.org/10.5281/zenodo.23720944).
+See the [paper page](https://cloudlabworks.dev/papers/predictive-ai-evaluation) for the abstract and PDF.
+
+```bibtex
+@techreport{alvord2026predictive,
+  author = {Alvord, Alex},
+  title = {{Predicting AI-System Responses Without Running Them: A Hierarchical Test-Time Update for the NeurIPS 2026 Predictive AI Evaluation Competition}},
+  institution = {CloudLab Works},
+  publisher = {Zenodo},
+  year = {2026},
+  month = oct,
+  type = {Preprint},
+  doi = {10.5281/zenodo.23720944},
+  url = {https://doi.org/10.5281/zenodo.23720944}
+}
+```

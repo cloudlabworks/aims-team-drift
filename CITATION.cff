@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying preprint."
+type: software
+title: "Team Drift — AIMS / NeurIPS 2026 PAIEC"
+authors:
+  - family-names: Alvord
+    given-names: Alex
+    orcid: "https://orcid.org/0009-0008-0614-1636"
+    affiliation: "CloudLab Works"
+repository-code: "https://github.com/cloudlabworks/aims-team-drift"
+url: "https://cloudlabworks.dev/papers/predictive-ai-evaluation"
+preferred-citation:
+  type: report
+  title: "Predicting AI-System Responses Without Running Them: A Hierarchical Test-Time Update for the NeurIPS 2026 Predictive AI Evaluation Competition"
+  authors:
+    - family-names: Alvord
+      given-names: Alex
+      orcid: "https://orcid.org/0009-0008-0614-1636"
+      affiliation: "CloudLab Works"
+  doi: "10.5281/zenodo.23720944"
+  url: "https://doi.org/10.5281/zenodo.23720944"
+  date-published: 2026-10-27
+  year: 2026
+  institution:
+    name: "CloudLab Works"
+  publisher:
+    name: "Zenodo"
