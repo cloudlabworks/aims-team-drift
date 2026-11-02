@@ -1,15 +1,15 @@
 # Team Drift: Hierarchical Test-Time Adaptation for Predictive AI Evaluation
 
-**Alex Alvord, Cloud Lab Works**
+**Alex Alvord, CloudLab Works**
 
 **Team:** Team Drift
 **NeurIPS 2026 Predictive AI Evaluation Competition (AIMS / PAIEC)**
 
 **Selected Codabench submission:** 981740 (v2)
-**Status:** Technical-report draft; not submitted.
+**Status:** Technical report for final evaluation.
 <!-- Sources: aims/report/REQUIREMENTS.md (competition and venue); aims/report/EVIDENCE.md (submission identity and supplied task record). -->
 
-> Release candidate: https://github.com/cloudlabworks/aims-team-drift (intended public URL; not yet published or verified). This report is typeset with the official NeurIPS template. The source-only release excludes gated measurement-db data, derived per-item tables, all model weights and fitted artifacts. Rebuild artifacts before the verification commands in Appendix A; the release README gives the complete ordered commands. No additional response training dataset differs from measurement-db. No publication or submission is claimed.
+> Source release: https://github.com/cloudlabworks/aims-team-drift (public, MIT; archived at https://doi.org/10.5281/zenodo.23720944). This report is typeset with the official NeurIPS template. The source-only release excludes gated measurement-db data, derived per-item tables, all model weights and fitted artifacts. Rebuild artifacts before the verification commands in Appendix A; the release README gives the complete ordered commands. No additional response training dataset differs from measurement-db.
 
 ## Abstract
 
@@ -283,7 +283,7 @@ python build_zip.py submission3 dist/submission-v3.zip
 ```
 <!-- Sources: aims/dev3/stage_calib_runs.sh; aims/dev3/select.py; aims/dev3/calibrate.py; aims/dev3/analyze.py; aims/dev3/make_submission3.py; aims/work/PLAN.md. -->
 
-Compare the analysis with `logs/analysis_v3_main.md`. Neither these commands nor the ZIP checker reproduces hosted scores. UNKNOWN: primary historical scoring receipts. Intended public release location: https://github.com/cloudlabworks/aims-team-drift (not yet published).
+Compare the analysis with `logs/analysis_v3_main.md`. Neither these commands nor the ZIP checker reproduces hosted scores. UNKNOWN: primary historical scoring receipts. Public release: https://github.com/cloudlabworks/aims-team-drift (archived at https://doi.org/10.5281/zenodo.23720944).
 
 ## Appendix B. Evidence boundaries
 

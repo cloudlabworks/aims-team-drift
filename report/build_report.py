@@ -39,11 +39,11 @@ preamble = r'''\documentclass{article}
 \providecommand{\pandocbounded}[1]{#1}
 \setlength{\emergencystretch}{2em}
 \title{Team Drift: Hierarchical Test-Time Adaptation for Predictive AI Evaluation}
-\author{Alex Alvord\\Cloud Lab Works\\Team Drift}
+\author{Alex Alvord\\CloudLab Works\\Team Drift}
 \begin{document}
 \maketitle
 '''
-status = '\\noindent\\textbf{Selected Codabench submission: 981740 (v2).} Technical-report release candidate; not submitted.\n\n'
+status = '\\noindent\\textbf{Selected Codabench submission: 981740 (v2).} Technical report for final evaluation.\n\n'
 # Include the release paragraph from frontmatter, without its Markdown quote marker.
 release = '\n'.join(line[2:] for line in front.splitlines() if line.startswith('> '))
 out = preamble + '\\begin{abstract}\n' + latex(abstract) + '\\end{abstract}\n' + status + latex(release) + latex(main)

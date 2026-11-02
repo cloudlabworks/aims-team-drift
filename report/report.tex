@@ -17,15 +17,15 @@
 \providecommand{\pandocbounded}[1]{#1}
 \setlength{\emergencystretch}{2em}
 \title{Team Drift: Hierarchical Test-Time Adaptation for Predictive AI Evaluation}
-\author{Alex Alvord\\Cloud Lab Works\\Team Drift}
+\author{Alex Alvord\\CloudLab Works\\Team Drift}
 \begin{document}
 \maketitle
 \begin{abstract}
 We study probability prediction for unobserved AI-system responses under benchmark-level cold start and a limited budget of revealed labels. Our reference method combines a regularized cross-benchmark logistic prior with a hierarchical logistic update fitted to the permitted test-time evidence. It shares information through benchmark shifts, subject--benchmark offsets, and item effects across subjects, while requiring only standard-library computation at inference. A later variant adds static item embeddings, deterministic random acquisition, and budget-specific temperature calibration. Local unseen-subject validation favored that extension: Brier area under the learning curve (ALC) decreased from 0.2060 to 0.2049. Hosted formative feedback reversed the ranking: the recorded primary \passthrough{\lstinline!brier!} value increased from 0.17587 to 0.18878, despite a lower calibration-error diagnostic. We therefore retain v2 as the reference and report v3 as a hosted regression. The result illustrates a limitation of local model selection: an internally consistent validation improvement does not establish improvement under a separately sampled hosted evaluation.
 \end{abstract}
-\noindent\textbf{Selected Codabench submission: 981740 (v2).} Technical-report release candidate; not submitted.
+\noindent\textbf{Selected Codabench submission: 981740 (v2).} Technical report for final evaluation.
 
-Release candidate: \url{https://github.com/cloudlabworks/aims-team-drift} (intended public URL; not yet published or verified). This report is typeset with the official NeurIPS template. The source-only release excludes gated measurement-db data, derived per-item tables, all model weights and fitted artifacts. Rebuild artifacts before the verification commands in Appendix A; the release README gives the complete ordered commands. No additional response training dataset differs from measurement-db. No publication or submission is claimed.
+Source release: \url{https://github.com/cloudlabworks/aims-team-drift} (public, MIT; archived at \url{https://doi.org/10.5281/zenodo.23720944}). This report is typeset with the official NeurIPS template. The source-only release excludes gated measurement-db data, derived per-item tables, all model weights and fitted artifacts. Rebuild artifacts before the verification commands in Appendix A; the release README gives the complete ordered commands. No additional response training dataset differs from measurement-db.
 \section{1. Task and evaluation objective}\label{task-and-evaluation-objective}
 
 The competition asks a submitted predictor to estimate the probability that a subject answers an item correctly, without running that subject on the item. A subject includes its model configuration and evaluation harness; an item includes the task and supplied attributes. The evaluation is a benchmark-level cold start. This setting differs from simply completing a response matrix: the predictor must work on benchmark items unavailable during training, and subject coverage may also change.
@@ -301,7 +301,7 @@ python dev3/make_submission3.py --k 32 --su 0.15 --d 1.5 --calib work/calib_fina
 python build_zip.py submission3 dist/submission-v3.zip
 \end{lstlisting}
 
-Compare the analysis with \passthrough{\lstinline!logs/analysis\_v3\_main.md!}. Neither these commands nor the ZIP checker reproduces hosted scores. UNKNOWN: primary historical scoring receipts. Intended public release location: \url{https://github.com/cloudlabworks/aims-team-drift} (not yet published).
+Compare the analysis with \passthrough{\lstinline!logs/analysis\_v3\_main.md!}. Neither these commands nor the ZIP checker reproduces hosted scores. UNKNOWN: primary historical scoring receipts. Public release: \url{https://github.com/cloudlabworks/aims-team-drift} (archived at \url{https://doi.org/10.5281/zenodo.23720944}).
 
 \section{Appendix B. Evidence boundaries}\label{appendix-b.-evidence-boundaries}
 
